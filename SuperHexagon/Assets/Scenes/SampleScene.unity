@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 125033341}
   - component: {fileID: 125033340}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: CenterSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 2114847977}
   - component: {fileID: 2114847976}
   m_Layer: 0
-  m_Name: Line
+  m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
