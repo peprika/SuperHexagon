@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
         if (Time.time >= nextTimeToSpawn)
         {
             Instantiate(hexagonPrefab, Vector3.zero, Quaternion.identity);
-            nextTimeToSpawn = Time.time + 1 / spawnRate;
+            nextTimeToSpawn = Time.time + 1f / spawnRate;
 
         }
     }

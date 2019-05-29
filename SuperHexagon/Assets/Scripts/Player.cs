@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -19,5 +20,12 @@ public class Player : MonoBehaviour
         // The player can rotate around the central dot
         // moveSpeed is negative so the controls work better
         transform.RotateAround(Vector3.zero, Vector3.forward, movement * Time.fixedDeltaTime * -moveSpeed);
+    }
+
+    // Player hits something
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Re-load the scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
